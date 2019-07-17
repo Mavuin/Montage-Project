@@ -1,13 +1,21 @@
 <div>
-    <div class="row">
-      <div class="col-4">
-        <img (click)="navigateToClips('riven')" class="img-responsive" src="assets/img/RIVEN.png">
-      </div>
-      <div class="col-4">
-        <img (click)="navigateToClips('irelia')" class="img-responsive" src="assets/img/Irelia.png">
-      </div>
-      <div class="col-4">
-        <img (click)="navigateToClips('yasuo')" class="img-responsive" src="assets/img/Yasuo.png">
-      </div>
+  <div class="row pt-5 m-0">
+    <div class="col-4">
+      <img (click)="navigateToClips('riven')" (mouseenter)="enterImage(1)" (mouseleave)="leaveImage(1)" class="zoom"
+        src={{rivenImg}}>
+    </div>
+    <div class="col-4">
+      <img (click)="navigateToClips('irelia')" (mouseenter)="enterImage(3)" (mouseleave)="leaveImage(3)" class="zoom"
+        src={{ireliaImg}}>
+    </div>
+    <div class="col-4">
+      <img (click)="navigateToClips('yasuo')" (mouseenter)="enterImage(2)" (mouseleave)="leaveImage(2)" class="zoom"
+        src="{{yasuoImg}}">
     </div>
   </div>
+  <div class="row m-0">
+    <div class="col-2 offset-md-5">
+      <img src="{{mavuinLogo}}">
+    </div>
+  </div>
+</div>

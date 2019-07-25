@@ -5,17 +5,15 @@
         src={{rivenImg}}>
     </div>
     <div class="col-4">
-      <img (click)="navigateToClips('irelia')" (mouseenter)="enterImage(3)" (mouseleave)="leaveImage(3)" class="zoom"
+      <img class="cursorHover" (click)="navigateToClips('irelia')" (mouseenter)="enterImage(3)" (mouseleave)="leaveImage(3)" class="zoom"
         src={{ireliaImg}}>
     </div>
     <div class="col-4">
-      <img (click)="navigateToClips('yasuo')" (mouseenter)="enterImage(2)" (mouseleave)="leaveImage(2)" class="zoom"
+      <img class="cursorHover" (click)="navigateToClips('yasuo')" (mouseenter)="enterImage(2)" (mouseleave)="leaveImage(2)" class="zoom"
         src="{{yasuoImg}}">
     </div>
   </div>
-  <div class="row m-0">
-    <div class="col-2 offset-md-5">
-      <img src="{{mavuinLogo}}">
-    </div>
+  <div class="logo-container">
+    <img class="logo" src="{{mavuinLogo}}">
   </div>
 </div>

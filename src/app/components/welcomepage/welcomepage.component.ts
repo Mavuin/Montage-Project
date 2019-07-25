@@ -18,11 +18,11 @@ export class WelcomepageComponent implements OnInit {
   readonly ireliaColored = 'assets/img/Irelia.png';
 
   readonly mavuinLogo = 'assets/img/Mavuin.png';
-  
+
   rivenImg = this.rivenBlackWhite;
   yasuoImg = this.yasuoBlackWhite;
   ireliaImg = this.ireliaBlackWhite;
- 
+
 
 
   constructor(private _router: Router) {
@@ -49,20 +49,25 @@ export class WelcomepageComponent implements OnInit {
       }
       case 3: {
         this.ireliaImg = this.ireliaColored;
+        break;
       }
     }
   }
 
   public leaveImage(img: number) {
-    if (img === 1) {
-      this.rivenImg = this.rivenBlackWhite;
-    }
-    if (img === 2) {
-      this.yasuoImg = this.yasuoBlackWhite;
-    }
-    if (img === 3) {
-      this.ireliaImg = this.ireliaBlackWhite
+    switch (img) {
+      case 1: {
+        this.rivenImg = this.rivenBlackWhite;
+        break;
+      }
+      case 2: {
+        this.yasuoImg = this.yasuoBlackWhite;
+        break;
+      }
+      case 3: {
+        this.ireliaImg = this.ireliaBlackWhite;
+        break;
+      }
     }
   }
-
 }
